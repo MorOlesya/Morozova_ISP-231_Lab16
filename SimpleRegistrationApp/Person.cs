@@ -5,9 +5,9 @@ namespace SimpleRegistrationApp
     public class Person
     {
         private string _name;
-        private int _age;
+        private string _age;
         private string _password;
-        public Person(string name, int age, string password)
+        public Person(string name, string age, string password)
         {
             _name = name;
             _age = age;
@@ -28,19 +28,27 @@ namespace SimpleRegistrationApp
         }
         public bool CheckAgeCorrect()
         {
-            if (_age < 1 || _age > 120)
-            {
-                MessageBox.Show("Возраст должен быть от 1 года до 120 лет");
-                return false;
-            }
-            else if (_age == null)
+            if (string.IsNullOrWhiteSpace(_age))
             {
                 MessageBox.Show("Введите возраст");
                 return false;
             }
+            else if (!int.TryParse(_age, out int age))
+            {
+                MessageBox.Show("Возраст должен быть числом");
+                return false;
+            }
             else
             {
-                return true;
+                if (age < 1 || age > 120)
+                {
+                    MessageBox.Show("Возраст должен быть от 1 года до 120 лет");
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
             }
         }
         public bool CheckPasswordCorrect()
