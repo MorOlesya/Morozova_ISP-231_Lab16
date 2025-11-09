@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36623.8 d17.14
+VisualStudioVersion = 17.14.36623.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter", "CurrencyConverter\CurrencyConverter.csproj", "{4E3F8ECE-4DAC-40FB-99B5-EBDE277FE357}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleRegistrationApp", "SimpleRegistrationApp\SimpleRegistrationApp.csproj", "{45789C44-A67E-4D1E-BA26-97A7C0BFC515}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4E3F8ECE-4DAC-40FB-99B5-EBDE277FE357}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E3F8ECE-4DAC-40FB-99B5-EBDE277FE357}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E3F8ECE-4DAC-40FB-99B5-EBDE277FE357}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45789C44-A67E-4D1E-BA26-97A7C0BFC515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45789C44-A67E-4D1E-BA26-97A7C0BFC515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45789C44-A67E-4D1E-BA26-97A7C0BFC515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45789C44-A67E-4D1E-BA26-97A7C0BFC515}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
